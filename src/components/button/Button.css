@@ -1,0 +1,23 @@
+.button {
+    border-radius: 60px;
+    border: none;
+    color: var(--snow);
+    font: var(--copy16);
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+}
+
+.button--primary {
+    background-color: var(--bluebell);
+}
+
+.button--secondary {
+    background-color: var(--navy);
+}
+
+.button--small {
+    font: var(--copy12);
+}

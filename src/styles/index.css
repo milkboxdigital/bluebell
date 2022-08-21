@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+@font-face {
+  font-family: "GillSans";
+  src: url("/GillSans.woff") format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Capriola', sans-serif;
+    box-sizing: border-box;
+    --feature32: normal normal 400 32px/32px 'Capriola';
+    --feature18: normal normal 400 18px/20px 'Capriola';
+    --title: normal normal 400 24px/28px 'Capriola';
+    --mini-title: normal normal 600 18px/20px 'GillSans';
+    --copy16: normal normal 400 16px/18px 'GillSans';
+    --copy14: normal normal 400 14px/16px 'GillSans';
+    --copy12: normal normal 400 12px/14px 'GillSans';
+    --snow: #fff;
+    --mist: #F8F8F8;
+    --sunshine: #F2EAB6;
+    --bark: #C9A062;
+    --skies: #5EBFD4;
+    --grass: #94A60F;
+    --bluebell: #947AF7;
+    --navy: #2C1583;
+    --slate: #979797;
+    --dark: #1E1E1E;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .react-app-link-container {
+        display: flex !important;
+    }
+
+    .react-app-container {
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(140deg, #FFF 0%, #5EBFD4  100%);
+        background-size: 400% 400%;
+        -webkit-animation: Gradient 15s ease-in-out infinite;
+        -moz-animation: Gradient 15s ease-in-out infinite;
+        animation: Gradient 15s ease-in-out infinite;
+    }
+
+    /* Animation */
+    @-webkit-keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+    @-moz-keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+    @keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+}
+
+.grayscale {
+    filter: grayscale(1);
+}
+
+.animated-grayscale {
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+.ungrayscale {
+    filter: grayscale(0);
+}
+
+.amimated-ungrayscale {
+    filter: grayscale(0);
+    animation: pop 1s;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
